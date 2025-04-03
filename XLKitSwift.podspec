@@ -10,7 +10,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.0'
   s.swift_version = '5.0'
   s.dependency 'HandyJSON', '~> 5.0.2'
-  s.source_files = 'XLKitSwift/**/*.{h,swift}'
+  
+  s.source_files = 'XLKitSwift/**/*'
   s.public_header_files = 'XLKitSwift/YXKitSwift.h'
   
   s.pod_target_xcconfig = {
