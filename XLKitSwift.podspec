@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = 'YXKitSwift'
+  s.name         = 'XLKitSwift'
   s.version      = '0.1.0'
   s.summary      = 'Your library description here'
   s.homepage     = 'https://github.com/xuxieliang/XLKitSwift.git'
