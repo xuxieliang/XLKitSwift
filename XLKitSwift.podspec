@@ -1,7 +1,8 @@
 Pod::Spec.new do |s|
   s.name         = 'XLKitSwift'
   s.version      = '0.1.0'
-  s.summary      = 'Your library description here'
+  s.summary      = '一个实用的 Swift 工具库，提供常用的开发工具和扩展'
+  s.description  = 'XLKitSwift 是一个功能丰富的 Swift 工具库，提供了大量实用的开发工具和扩展，帮助开发者提高开发效率。'
   s.homepage     = 'https://github.com/xuxieliang/XLKitSwift.git'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { 'xuxieliang' => '289417621@qq.com' }
@@ -9,16 +10,15 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.0'
   s.swift_version = '5.0'
   s.dependency 'HandyJSON', '~> 5.0.2'
-  s.source_files = 'YXKitSwift/**/*.{h,swift}'  # 匹配.h和.swift文件
-  s.public_header_files = 'YXKitSwift/**/*.h'    # 公开头文件
-  s.ios.deployment_target = "11.0"
+  s.source_files = 'XLKitSwift/**/*.{h,swift}'
+  s.public_header_files = 'XLKitSwift/YXKitSwift.h'
+  
   s.pod_target_xcconfig = {
-        'IPHONEOS_DEPLOYMENT_TARGET' => '12.0',
-        'SWIFT_OPTIMIZATION_LEVEL' => '-Onone'
-      }
-      
-      # 覆盖依赖库的旧版本设置
-      s.user_target_xcconfig = {
-        'IPHONEOS_DEPLOYMENT_TARGET' => '12.0'
-      }
+    'IPHONEOS_DEPLOYMENT_TARGET' => '12.0',
+    'SWIFT_OPTIMIZATION_LEVEL' => '-Onone'
+  }
+  
+  s.user_target_xcconfig = {
+    'IPHONEOS_DEPLOYMENT_TARGET' => '12.0'
+  }
 end
