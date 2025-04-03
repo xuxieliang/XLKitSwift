@@ -8,11 +8,10 @@ Pod::Spec.new do |s|
   s.author       = { 'xuxieliang' => '289417621@qq.com' }
   s.source       = { :git => 'https://github.com/xuxieliang/XLKitSwift.git', :tag => s.version.to_s }
   s.ios.deployment_target = '12.0'
-  s.swift_version = '5.0'
-  s.dependency 'HandyJSON', '~> 5.0.2'
+  s.swift_versions = ['5.0']
   
-  s.source_files = 'XLKitSwift/**/*'
-  s.public_header_files = 'XLKitSwift/YXKitSwift.h'
+  s.source_files = 'XLKitSwift/**/*.{swift,h,m}'
+  # s.public_header_files = 'XLKitSwift/YXKitSwift.h'
   
   s.pod_target_xcconfig = {
     'IPHONEOS_DEPLOYMENT_TARGET' => '12.0',
@@ -22,4 +21,6 @@ Pod::Spec.new do |s|
   s.user_target_xcconfig = {
     'IPHONEOS_DEPLOYMENT_TARGET' => '12.0'
   }
+
+  s.dependency 'HandyJSON', '~> 5.0.2'
 end
