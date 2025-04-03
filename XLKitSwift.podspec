@@ -11,4 +11,6 @@ Pod::Spec.new do |s|
   s.dependency 'HandyJSON', '~> 5.0.2'
   s.source_files = 'YXKitSwift/**/*.{h,swift}'  # 匹配.h和.swift文件
   s.public_header_files = 'YXKitSwift/**/*.h'    # 公开头文件
+  s.ios.deployment_target = "11.0"
+
 end
