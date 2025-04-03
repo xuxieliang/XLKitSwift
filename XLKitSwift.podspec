@@ -12,5 +12,13 @@ Pod::Spec.new do |s|
   s.source_files = 'YXKitSwift/**/*.{h,swift}'  # 匹配.h和.swift文件
   s.public_header_files = 'YXKitSwift/**/*.h'    # 公开头文件
   s.ios.deployment_target = "11.0"
-
+  s.pod_target_xcconfig = {
+        'IPHONEOS_DEPLOYMENT_TARGET' => '12.0',
+        'SWIFT_OPTIMIZATION_LEVEL' => '-Onone'
+      }
+      
+      # 覆盖依赖库的旧版本设置
+      s.user_target_xcconfig = {
+        'IPHONEOS_DEPLOYMENT_TARGET' => '12.0'
+      }
 end
